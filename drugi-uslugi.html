@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angel Rose</title>
+
+<style>
+    .img{
+        display: block;
+        margin: 0 auto;
+    }
+/* IMAGE ROW */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  margin: 10px auto 0; /* tighter spacing */
+}
+
+.image-container img {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+}
+
+/* smaller rose */
+.image-container img.rose {
+  transform: scale(0.75);
+}
+
+/* FONT */
+@font-face {
+    font-family: "rainyhearts";
+    src: url(/assets/css/fonts/rainyhearts.woff2) format("woff2"),
+         url(/assets/css/fonts/rainyhearts.woff) format("woff"),
+         url(/assets/css/fonts/rainyhearts.ttf) format("truetype");
+}
+/* VARIABLES */
+body {
+    --veryLight: #ffecf4;
+    --light: #ffd3ec;
+    --pink: #e997bc;
+    --purple: #d47b83;
+    --textColor: #922a45;
+    --headingsColor: #b05683;
+    --linkColor: #c7555f;
+    --linkColorHover: #f0b207;
+    --backgroundColor: #fcd8ea;
+    --mainBackgroundColor: #ffecf4;
+    --borderColor: #deafb3;
+}
+
+/* BASE */
+body {
+    margin: 0;
+    font-family: "rainyhearts", monospace, sans-serif;
+    font-size: 17px;
+    color: var(--textColor);
+
+    background-color: var(--mainBackgroundColor);
+    background-image: url(/assets/img/layout/bg.png);
+    background-repeat: repeat;
+
+    cursor: url(/assets/img/cursor2.gif) 1 1, auto;
+}
+
+/* WRAPPER */
+.wrapper {
+    width: 900px;
+    height: 500px;
+    margin: 5px auto 20px; /* moved up */
+    border: 2px dotted var(--borderColor);
+    background: var(--backgroundColor);
+}
+
+/* TOP BUTTONS */
+.top-buttons {
+    width: fit-content;
+    margin: 10px auto; /* reduced gap */
+    padding: 10px 15px;
+    background: var(--veryLight);
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 10px;
+    font-size: 14px;
+
+    background: var(--pink);
+    border: 1px solid var(--borderColor);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--purple);
+}
+/* LAYOUT */
+.main-layout {
+    display: flex;
+}
+
+/* LEFT MENU */
+.left-menu {
+    width: 25%;
+    border-right: 1px solid var(--borderColor);
+    background: var(--veryLight);
+}
+
+.left-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--linkColor);
+    border-bottom: 1px dotted var(--borderColor);
+}
+
+.left-menu a:hover {
+    background: var(--light);
+    color: var(--linkColorHover);
+}
+
+/* CONTENT */
+.content {
+    width: 50%;
+    padding: 20px;
+}
+
+/* RIGHT */
+.right-sidebar {
+    width: 25%;
+    border-left: 1px solid var(--borderColor);
+    background: var(--veryLight);
+    padding: 20px;
+}
+.centered
+{
+    text-align: center;
+}
+
+div.ex3 {
+  background-color: #FAE5FF;
+  width: 391.5px;
+  height: 250px;
+  overflow: auto;
+}
+
+.inlove-image{
+       position: absolute;
+    top: 520px;
+    right: 450px;
+    width: 215px;
+    z-index: 5;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="image-container">
+  <img src="angel.png" alt="angel">
+  <img src="rose.png" alt="rose" class="rose">
+  <img src="site.png" alt="site">
+  
+</div>
+
+<div class="wrapper">
+    <div class="top-buttons">
+        <a href="nachalo.html" class="btn">Начало</a>
+        <a href="zamen.html" class="btn">За мен</a>
+        <a href="taro.html" class="btn">Таро</a>
+        <a href="drugi-uslugi.html" class="btn">Други услуги</a>
+        <a href="kontakti.html" class="btn">Контакти</a>
+    </div>
+
+    <img src="inlove.jpg" class="inlove-image" alt="cute">
+
+
+ 
+
+<div class="ex3"> <p class="centered">За сега нямам</p></div>
+</div>
+
+
+
+  
+
+
+
+</body>
+</html>
